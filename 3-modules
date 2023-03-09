@@ -1,0 +1,18 @@
+// Commonjs every file is module by default in node
+// Module in nodejs = Encapsulated code (only share where we want
+
+// Accessing names or variables
+const names = require('./4-names');
+
+const sayHe = require('./5-utils');
+
+const data = require('./6-alternatives-flavor')
+
+// This module was already invoked in itself
+require('./7-mind-grenade')
+
+sayHe('Ayane');
+sayHe(names.john);
+sayHe(names.pet);
+
+// Note that every module imported must be invoked after
